@@ -1,0 +1,543 @@
+@import url(global.css);
+
+body {
+  background: linear-gradient(180deg, #000000 25%, #6B0F1A 100%);
+  background-repeat: no-repeat;                     
+}
+
+/*Navbar*/
+nav{
+    background-color: transparent;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    transition: 0.4s ;
+    z-index: 1000;
+}
+
+.menu{
+    margin-top: 34px;
+    font-size: 25px;
+}
+
+.menu a{
+    color: var(--light);
+    padding: 50px;
+}
+
+.menu a:hover {
+  text-shadow: 1px 1px 2px var(--light);
+  transition:0.3s ;
+}
+
+nav.scrolled {
+  background-color: var(--nav);
+}
+
+nav.scrolled .menu a {
+  color: var(--light);
+}
+
+
+/*Header*/
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+header img {
+  width: 100%;
+}
+
+header h1{
+    color: var(--light);
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -30%;
+    margin-bottom: 17px;
+}
+
+header h3{
+    color: var(--light);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 75px;
+}
+
+header button{
+    color: var(--vinho);
+    background-color: var(--light);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header button:hover{
+  transform: scale(1.1);
+  transition: 0.3s ;
+}
+
+/*Section Biografia*/
+#biografia {
+  padding: 100px 10%;
+  color: var(--light);
+}
+
+#biografia h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--light);
+  margin-bottom: 100px;
+}
+
+.bio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.bio-wrapper p {
+  flex: 1;
+  font-size: 25px;
+  line-height: 1.7;
+  color: var(--light);
+  width: 500px;
+}
+
+.bio-wrapper img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+/*Section Discografia*/
+#discografia {
+  padding: 100px 10%;
+  color: var(--light);
+}
+
+#discografia h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--light);
+  margin-bottom: 100px;
+}
+
+.wrapper-disk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto 80px;
+}
+
+.wrapper-disk::before {
+  content: "";
+  position: absolute;
+  margin-left: 140px;
+  height: 60%;
+  width: 5px;
+  background-color: var(--light);
+  z-index: 0;
+}
+
+.disk img {
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.timeline {
+  background: var(--light);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  
+}
+
+.description {
+  max-width: 360px;
+  text-align: left;
+}
+
+.description h3 {
+  font-size: 25px;
+  color: var(--light);
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 20px;
+  color: var(--light);
+  
+}
+
+/*Section Artistas Influênciados*/
+#influencia{
+  background-color: var(--light);
+  height: 700px;
+  padding: 100px 10%;
+}
+
+#influencia h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 100px;
+}
+
+.artistas-wrapper{
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+
+
+.card:hover {
+  transform: scale(1.1);
+  transition:0.3s ; 
+}
+
+.card button{
+  background-color: var(--black);
+  color: var(--light);
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  border-style: none;
+  margin-top: 20px;
+}
+
+/*Section Premiações*/
+#premios {
+  padding: 100px 10%;
+  color: var(--light);
+}
+
+#premios h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--light);
+  margin-bottom: 100px;
+}
+
+.premios-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.cards-premios{
+  background-color: var(--light);
+  color: var(--vinho);
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.cards-premios:hover {
+  transform: scale(1.1);
+  transition:  0.3s ;
+}
+
+.cards-premios h3{
+  color: var(--black);
+}
+
+.cards-premios h4{
+  color: var(--vinho);
+  font-weight: 500;
+}
+
+.cards-premios h5{
+  color: var(--vinho);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cards-premios p{
+  color: var(--black);
+  font-weight: 600;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--light);
+  color: var(--black);
+  padding: 30px 100px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logo-footer {
+  width: 250px;
+  height: auto;
+}
+
+footer .links-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+}
+
+footer .citacao{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer .citacao img {
+  margin-top: 10px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+footer .citacao p {
+  font-size: 20px;
+  font-weight: 400;
+  width: 300px;
+}
+
+footer .navegacao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer .navegacao h4,
+footer .contato h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+}
+
+footer .navegacao a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 20px;
+}
+
+footer .navegacao a:hover {
+  font-weight: 700;
+  transition:0.3s ;
+}
+
+footer .contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .contato .rede-social{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .contato .rede-social a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ;
+}
+
+footer p {
+  margin: 0;
+}
+
+.creditos-site {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--vinho);
+    background-color: var(--light);
+    border-top: 1px solid #bbb;
+}
+
+
+/*RESPONSIVIDADE*/
+
+/*Telas Maiores*/
+@media (min-width: 1600px) {
+  .bio-wrapper p,
+  .bio-wrapper img,
+  .disk img {
+    width: 630px;
+  }
+
+  .wrapper-disk::before {
+  margin-left: 270px;
+  height: 78%;
+}
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+  .menu {
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu a {
+    padding: 10px 15px;
+    display: inline-block; 
+    font-size: 16px;
+  }
+
+  header{
+    margin-bottom: -250px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin-top: -10%;
+  }
+
+  header h3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  header button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  #biografia, #discografia, #influencia, #premios {
+    padding: 50px 5%;
+  }
+
+  #biografia h2,
+  #discografia h2,
+  #influencia h2,
+  #premios h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .bio-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-wrapper p,
+  .bio-wrapper img {
+    width: 100%;
+  }
+
+  .wrapper-disk {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .disk img {
+    width: 100%;
+  }
+
+  .wrapper-disk::before {
+  margin-left: 5px;
+  margin-top: 300px;
+  height: 5px;
+  width: 70%;
+  }
+
+  .timeline {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #influencia{
+  height: 800px;
+  }
+
+  .artistas-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  }
+
+  .card {
+    width: 30%;
+    min-width: 120px;
+    text-align: center;
+  }
+
+  .card button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .premios-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-premios {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  footer .links-footer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  footer .citacao p {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .navegacao,
+  footer .contato {
+    align-items: center;
+  }
+
+  footer .contato .rede-social {
+    justify-content: center;
+  }
+}

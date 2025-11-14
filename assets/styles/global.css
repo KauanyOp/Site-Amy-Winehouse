@@ -1,0 +1,21 @@
+/*Paleta de Cores*/
+:root{
+    --black: #1B1A1A;
+    --light: #E8DED1;
+    --red: #6e2029;
+    --vinho: #6B0F1A;
+    --nav: #530c14;
+}
+
+/*Reset*/
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+  

@@ -393,89 +393,240 @@ footer p {
   }
 
   .wrapper-disk::before {
-  margin-left: 270px;
-  height: 78%;
-}
+    margin-left: 270px;
+    height: 78%;
+  }
 }
 
-/* Mobile*/
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 992px) {
+  nav {
+    height: auto;
+    padding: 10px 0;
+  }
+
   .menu {
-    font-size: 20px;
-    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 15px;
   }
 
   .menu a {
     padding: 10px 15px;
-    display: inline-block; 
-    font-size: 16px;
-  }
-
-  header{
-    margin-bottom: -250px;
   }
 
   header h1 {
-    font-size: 50px;
-    margin-top: -10%;
+    font-size: 70px;
+    margin-top: -20%;
   }
 
   header h3 {
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 40px;
   }
 
   header button {
-    font-size: 18px;
-    padding: 8px;
-  }
-
-  #biografia, #discografia, #influencia, #premios {
-    padding: 50px 5%;
+    font-size: 20px;
+    padding: 10px 15px;
   }
 
   #biografia h2,
   #discografia h2,
   #influencia h2,
   #premios h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 50px;
+    margin-bottom: 60px;
+    text-align: center;
   }
 
   .bio-wrapper {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    gap: 30px;
   }
 
-  .bio-wrapper p,
+  .bio-wrapper img {
+    width: 80%;
+  }
+
+  .bio-wrapper p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .wrapper-disk {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .disk img {
+    width: 80%;
+  }
+
+  .wrapper-disk::before {
+  margin-top: 220px;
+  margin-left: 10px;
+  height: 5px;
+  width: 60%;
+}
+
+  .timeline {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .description {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #influencia {
+    height: auto;
+    padding: 60px 5%;
+  }
+
+  .artistas-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card button {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .premios-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .cards-premios {
+    width: 45%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  footer .links-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  footer .citacao {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .citacao p {
+    width: 100%;
+  }
+
+  footer .navegacao,
+  footer .contato {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+  nav {
+    height: auto;
+    padding: 5px 0;
+    overflow-x: auto;
+  }
+
+  .menu {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: flex-start;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .menu a {
+    padding: 5px 10px;
+    flex-shrink: 0;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-top: -8%;
+  }
+
+  header h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  header button {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .bio-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
   .bio-wrapper img {
     width: 100%;
+  }
+
+  .bio-wrapper p {
+    width: 100%;
+    font-size: 16px;
   }
 
   .wrapper-disk {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
   }
 
   .disk img {
     width: 100%;
   }
 
-  .wrapper-disk::before {
-  margin-left: 5px;
-  margin-top: 300px;
-  height: 5px;
-  width: 70%;
-  }
-
   .timeline {
-    width: 80px;
-    height: 80px;
-    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+   .wrapper-disk::before {
+  margin-top: 75px;
+  height: 5px;
+  width: 60%;
   }
 
   .description {
@@ -483,32 +634,35 @@ footer p {
     text-align: center;
   }
 
-  #influencia{
-  height: 800px;
-  }
-
   .artistas-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 35px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
   }
 
   .card {
-    width: 30%;
-    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 90%;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .card button {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
+    margin-top: 12px;
+    width: 100%;
   }
 
   .premios-wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
 
   .cards-premios {
@@ -518,26 +672,32 @@ footer p {
 
   footer {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 20px;
+    text-align: center;
   }
 
   footer .links-footer {
     flex-direction: column;
-    gap: 30px;
     align-items: center;
+    gap: 20px;
+  }
+
+  footer .citacao {
+    align-items: center;
+    text-align: center;
   }
 
   footer .citacao p {
     width: 100%;
-    text-align: center;
   }
 
   footer .navegacao,
   footer .contato {
     align-items: center;
+    text-align: center;
   }
 
   footer .contato .rede-social {
-    justify-content: center;
+    font-size: 36px;
   }
 }
